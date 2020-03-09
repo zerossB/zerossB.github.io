@@ -5,11 +5,674 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Guilherme Haynes Howe</title>
+    <title>zerossB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://avatars3.githubusercontent.com/u/8009480?v=4" type="image/png">
 </head>
 
 <body>
-    <h1>Olá Mundo</h1>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="profile">
+        <div id="profile_img" style="background: url(https://avatars3.githubusercontent.com/u/8009480?v=4) center;">
+        </div>
+        <div id="username"><span style="display:block;">~Haynesss~</span><a
+                href="https://github.com/zerossB">@zerossB</a></div>
+        <div id="userbio" style="display: block;">Computer Scientist, Backend Developer, Coffee Lover.</div>
+        <div id="about">
+            <span style="display:block;"><i class="fas fa-users"></i> &nbsp; @bildvitta</span>
+            <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
+            <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a
+                    href="http://zerossb.github.io">http://zerossb.github.io</a></span>
+            <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Ribeirão Preto, São Paulo -
+                Brazil</span>
+            <span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
+            <div class="socials">
+                <span style="display:block;"><a href="https://www.twitter.com/hynzhw" target="_blank" class="socials"><i
+                            class="fab fa-twitter"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.dribbble.com/null" target="_blank"
+                        class="socials"><i class="fab fa-dribbble"></i></a></span>
+                <span style="display:block;"><a href="https://www.linkedin.com/in/ghaynesh/" target="_blank"
+                        class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.medium.com/@null/" target="_blank"
+                        class="socials"><i class="fab fa-medium-m"></i></a></span>
+            </div>
+        </div>
+    </div>
+    <div id="display">
+        <div id="work">
+            <h1>Work.</h1>
+            <div class="projects" id="work_section">
+                <a href="https://github.com/JabukaMoz/atividades" target="_blank">
+                    <section>
+                        <div class="section_title">atividades</div>
+                        <div class="about_section">
+                            <span style="display:block;">Este repositório é usado para rastreamento de tarefas
+                                relacionadas com o trabalho do JabukaMoz.</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/loracc/CampeonatoCs" target="_blank">
+                    <section>
+                        <div class="section_title">CampeonatoCs</div>
+                        <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/AgendaStefani" target="_blank">
+                    <section>
+                        <div class="section_title">AgendaStefani</div>
+                        <div class="about_section">
+                            <span style="display:block;">Agenda de Contatos</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/AppsJava" target="_blank">
+                    <section>
+                        <div class="section_title">AppsJava</div>
+                        <div class="about_section">
+                            <span style="display:block;">Preguiça de criar vários repos</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/Artigo-Estacio" target="_blank">
+                    <section>
+                        <div class="section_title">Artigo-Estacio</div>
+                        <div class="about_section">
+                            <span style="display:block;">Impacto das Licenças de Software em projetos OpenSource</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TeX</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/Assinaturas-Stefani" target="_blank">
+                    <section>
+                        <div class="section_title">Assinaturas-Stefani</div>
+                        <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/AulasPython" target="_blank">
+                    <section>
+                        <div class="section_title">AulasPython</div>
+                        <div class="about_section">
+                            <span style="display:block;">Aulas Python</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/aulas_zeus" target="_blank">
+                    <section>
+                        <div class="section_title">aulas_zeus</div>
+                        <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/Card-Material-Design" target="_blank">
+                    <section>
+                        <div class="section_title">Card-Material-Design</div>
+                        <div class="about_section">
+                            <span style="display:block;">Estudos de CSS3 e HTML5 para criação de Card no estilo Material
+                                Design</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/CasaNadaver" target="_blank">
+                    <section>
+                        <div class="section_title">CasaNadaver</div>
+                        <div class="about_section">
+                            <span style="display:block;">Uma casa, com varios planetas em volta. Feita com
+                                OpenGL.</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C++</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/Cursinho-Ativo" target="_blank">
+                    <section>
+                        <div class="section_title">Cursinho-Ativo</div>
+                        <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/customuser-django" target="_blank">
+                    <section>
+                        <div class="section_title">customuser-django</div>
+                        <div class="about_section">
+                            <span style="display:block;">Código de Exemplo para a criação de um Usuário Customizado no
+                                Django.</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/django-docker" target="_blank">
+                    <section>
+                        <div class="section_title">django-docker</div>
+                        <div class="about_section">
+                            <span style="display:block;">Image made to be able to create and run Django projects in a
+                                simple and 100% modifiable way.</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Shell</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/ED-Estacio" target="_blank">
+                    <section>
+                        <div class="section_title">ED-Estacio</div>
+                        <div class="about_section">
+                            <span style="display:block;">Estrutura de Dados - Exercicios</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C++</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/GsonExample" target="_blank">
+                    <section>
+                        <div class="section_title">GsonExample</div>
+                        <div class="about_section">
+                            <span style="display:block;">Exemplo de utilização da biblioteca Gson</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/iris-classification" target="_blank">
+                    <section>
+                        <div class="section_title">iris-classification</div>
+                        <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/ITMT" target="_blank">
+                    <section>
+                        <div class="section_title">ITMT</div>
+                        <div class="about_section">
+                            <span style="display:block;">IT Management Tools - OCSInventory | GLPI</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Dockerfile</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/JDBManager" target="_blank">
+                    <section>
+                        <div class="section_title">JDBManager</div>
+                        <div class="about_section">
+                            <span style="display:block;">Database Manager for Apache Derby</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/JGenerics" target="_blank">
+                    <section>
+                        <div class="section_title">JGenerics</div>
+                        <div class="about_section">
+                            <span style="display:block;">Aplicação de Estruturas de Dados Utilizando Generics</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/JSQLGen" target="_blank">
+                    <section>
+                        <div class="section_title">JSQLGen</div>
+                        <div class="about_section">
+                            <span style="display:block;">Gerador de Projetos Java com UML</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/OpenBlacklist" target="_blank">
+                    <section>
+                        <div class="section_title">OpenBlacklist</div>
+                        <div class="about_section">
+                            <span style="display:block;">A repository where you have several blacklists ready to be used
+                                in your squid.</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/py-trello" target="_blank">
+                    <section>
+                        <div class="section_title">py-trello</div>
+                        <div class="about_section">
+                            <span style="display:block;">An implementation of trello using django and REST api</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/PyAcelle" target="_blank">
+                    <section>
+                        <div class="section_title">PyAcelle</div>
+                        <div class="about_section">
+                            <span style="display:block;">Automated Mail Marketing Sending</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/Script-TCC" target="_blank">
+                    <section>
+                        <div class="section_title">Script-TCC</div>
+                        <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/SpaceInvaders2" target="_blank">
+                    <section>
+                        <div class="section_title">SpaceInvaders2</div>
+                        <div class="about_section">
+                            <span style="display:block;">Space Invaders game Developed with Java</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/SSI" target="_blank">
+                    <section>
+                        <div class="section_title">SSI</div>
+                        <div class="about_section">
+                            <span style="display:block;">This repository is a simple example of a single sign-on
+                                (SSI)</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/WebSiteCam" target="_blank">
+                    <section>
+                        <div class="section_title">WebSiteCam</div>
+                        <div class="about_section">
+                            <span style="display:block;">Uma pequena demonstração de como utilizar a WebAPI Interface
+                                "navigator.getUserMedia();" para mostrar e tirar uma foto utilizando a WebCam do
+                                Computador</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/wpstrata" target="_blank">
+                    <section>
+                        <div class="section_title">wpstrata</div>
+                        <div class="about_section">
+                            <span style="display:block;">Primeiro tema feito para Wordpress</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/zerossb.github.io" target="_blank">
+                    <section>
+                        <div class="section_title">zerossb.github.io</div>
+                        <div class="about_section">
+                            <span style="display:block;">My Personal WebSite</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/APIProdutos" target="_blank">
+                    <section>
+                        <div class="section_title">APIProdutos</div>
+                        <div class="about_section">
+                            <span style="display:block;">CRUD com ASP.NET Core/API utilizando JWT, EF Core e
+                                Docker.</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C#</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/PyBrotherInfo" target="_blank">
+                    <section>
+                        <div class="section_title">PyBrotherInfo</div>
+                        <div class="about_section">
+                            <span style="display:block;">A CLI made in python to retrieve information from the Brother
+                                Printer and send it by e-mail to the Administrators of the Printer.</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/Labirinto-IA" target="_blank">
+                    <section>
+                        <div class="section_title">Labirinto-IA</div>
+                        <div class="about_section">
+                            <span style="display:block;">Resolução de Labirinto utilizando buscas cegas e heuristicas.
+                            </span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 2</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/TodoItem-API" target="_blank">
+                    <section>
+                        <div class="section_title">TodoItem-API</div>
+                        <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C#</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 2</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/TotalRam" target="_blank">
+                    <section>
+                        <div class="section_title">TotalRam</div>
+                        <div class="about_section">
+                            <span style="display:block;">Indicador de uso da memória RAM</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C#</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 2</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/Sarahah-Django" target="_blank">
+                    <section>
+                        <div class="section_title">Sarahah-Django</div>
+                        <div class="about_section">
+                            <span style="display:block;">An implementation of sarah in django</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 3</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/murilobsd/zeus" target="_blank">
+                    <section>
+                        <div class="section_title">zeus</div>
+                        <div class="about_section">
+                            <span style="display:block;">Create Scaffold of flask</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 5</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 5</span>
+                        </div>
+                    </section>
+                </a></div>
+        </div>
+        <div id="forks" style="display: block;">
+            <h1>Forks.</h1>
+            <div class="projects" id="forks_section">
+                <a href="https://github.com/zerossB/django-fab-server" target="_blank">
+                    <section>
+                        <div class="section_title">django-fab-server</div>
+                        <div class="about_section">
+                            <span style="display:block;">instala todos os pacotes necessários para configurar um projeto
+                                com python/django + nginx + supervisor no ubuntu</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/OCSInventory-Docker-Image" target="_blank">
+                    <section>
+                        <div class="section_title">OCSInventory-Docker-Image</div>
+                        <div class="about_section">
+                            <span style="display:block;">Docker image for OCSInventory Server</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Shell</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/OCSInventory-Docker-Stack" target="_blank">
+                    <section>
+                        <div class="section_title">OCSInventory-Docker-Stack</div>
+                        <div class="about_section">
+                            <span style="display:block;">Docker stack for OCSInventory Server</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Shell</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/online-cv" target="_blank">
+                    <section>
+                        <div class="section_title">online-cv</div>
+                        <div class="about_section">
+                            <span style="display:block;">A minimal Jekyll Theme to host your resume (CV)</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/zerossB/zeus" target="_blank">
+                    <section>
+                        <div class="section_title">zeus</div>
+                        <div class="about_section">
+                            <span style="display:block;">Create Scaffold of flask</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                        </div>
+                    </section>
+                </a></div>
+        </div>
+        <div id="blog_section">
+            <h1>Blog.</h1>
+            <div id="blogs"></div>
+        </div>
+        <div id="footer">
+            <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        setTimeout(function () {
+            document.getElementById("loading").classList.add("animated");
+            document.getElementById("loading").classList.add("fadeOut");
+            setTimeout(function () {
+                document.getElementById("loading").classList.remove("animated");
+                document.getElementById("loading").classList.remove("fadeOut");
+                document.getElementById("loading").style.display = "none";
+            }, 800);
+        }, 1500);
+        $.getJSON("blog.json", function (blog) {
+            blog = blog || [];
+            if (blog.length == 0) {
+                return (document.getElementById("blog_section").style.display =
+                    "none");
+            }
+            for (var i = 0; i < blog.length; i++) {
+                $("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
+                    <div class="blog_container">
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
+            </a>
+            `);
+            }
+        }).fail(function () {
+            return (document.getElementById("blog_section").style.display = "none");
+        });
+    </script>
+
+    <script>
+        const magicProjectsGrid = new MagicGrid({
+            container: "#work_section",
+            animate: false,
+            gutter: 30, // default gutter size
+            static: true,
+            useMin: false,
+            maxColumns: 2,
+            useTransform: true
+        });
+
+        const magicForksGrid = new MagicGrid({
+            container: "#forks_section",
+            animate: false,
+            gutter: 30, // default gutter size
+            static: true,
+            useMin: false,
+            maxColumns: 2,
+            useTransform: true
+        });
+
+        $("document").ready(() => {
+            magicProjectsGrid.listen();
+            magicForksGrid.listen();
+        });
+    </script>
+
+
 </body>
 
 </html>
